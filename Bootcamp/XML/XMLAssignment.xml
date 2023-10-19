@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserProfile>
+	<FirstName>Denis</FirstName>
+	<LastName>Diamantis</LastName>
+	<Password>PeopleCert</Password>
+	<Email>denisdiam@peoplecert.com</Email>
+	<Picture location="server/denisdiam.jpeg"></Picture>
+</UserProfile>

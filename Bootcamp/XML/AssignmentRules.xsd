@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/AssignmentRules"
+	xmlns:tns="http://www.example.org/AssignmentRules"
+	elementFormDefault="qualified">
+	
+	<element name="Passenger" type="tns:Passenger"/>
+	<complexType name="Passenger">		
+	<sequence>
+			<element name="lastName" type="tns:maxName" />
+			<element name="firstName" type="tns:maxName"/>
+			<element name="middleName" type="tns:maxName"/>
+			<element name="email" type="string"/>
+			<element name="phone" type="string"/>
+			<element name="Flight" type="tns:Flight" />
+		</sequence>
+	</complexType>
+	<complexType name="Flight">
+		<sequence>
+			<element name="flightNumber" type="string"/>
+			<element name="operatingAirlines" type="string"/>
+			<element name="arrivalCity" type="string"/>
+			<element name="dateOfDeparture" type="string"/>
+			<element name="estimatedDepartureTime" type="string"/>
+		</sequence>
+	</complexType>
+	<simpleType name="maxName">
+		<restriction base="string">
+		<maxLength value="20"></maxLength>
+		</restriction>
+	</simpleType>
+</schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This xml document holds the license information -->
+<DriverLicense>
+	<Number>12345</Number>
+	<FirstName>Michail</FirstName>
+	<!-- Less than in data -->
+	<LastName>Kasap%lt;oglou</LastName>
+	<DateOfBirth>09/09/2000</DateOfBirth>
+	<VehicleType>Car</VehicleType>
+	<!-- Whole data as is -->
+	<![CDATA[
+		<DateOfIssue>22/09/2023</DateOfIssue>
+	]]>
+	<DateOfIssue>22/09/2023</DateOfIssue>
+	<ExpireDate>22/09/2050</ExpireDate>
+	<Photo location="server/michail.jpeg"></Photo>
+	<!-- Children -->
+	<Address>
+		<Street>Panepistimiou</Street>
+		<StreetNumber>39</StreetNumber>
+		<City>Athens</City>
+		<ZipCode>12345</ZipCode>
+	</Address>
+</DriverLicense>

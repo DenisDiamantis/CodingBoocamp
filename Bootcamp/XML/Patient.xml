@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Patient xmlns:tns="http://www.peoplecert.org/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.peoplecert.org/Patient Patient.xsd "
+	id="934">
+	<tns:name>John</tns:name>
+	<tns:age>28</tns:age>
+	<tns:email>john@gmail.com</tns:email>
+	<tns:gender>M</tns:gender>
+	<tns:phone>92342342</tns:phone>
+
+</tns:Patient>

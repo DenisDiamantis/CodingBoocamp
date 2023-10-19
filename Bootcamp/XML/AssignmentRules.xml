@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Passenger xmlns:tns="http://www.example.org/AssignmentRules" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/AssignmentRules AssignmentRules.xsd ">
+  <tns:lastName>tns:lastName</tns:lastName>
+  <tns:firstName>tns:firstName</tns:firstName>
+  <tns:middleName>tns:middleName</tns:middleName>
+  <tns:email>tns:email</tns:email>
+  <tns:phone>tns:phone</tns:phone>
+  <tns:Flight>
+    <tns:flightNumber>tns:flightNumber</tns:flightNumber>
+    <tns:operatingAirlines>tns:operatingAirlines</tns:operatingAirlines>
+    <tns:arrivalCity>tns:arrivalCity</tns:arrivalCity>
+    <tns:dateOfDeparture>tns:dateOfDeparture</tns:dateOfDeparture>
+    <tns:estimatedDepartureTime>tns:estimatedDepartureTime</tns:estimatedDepartureTime>
+  </tns:Flight>
+</tns:Passenger>

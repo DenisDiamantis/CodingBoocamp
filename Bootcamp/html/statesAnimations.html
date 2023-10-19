@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+
+        }
+        h1{
+            text-align: center;
+        }
+        .state{
+            background-color: rgb(41, 241, 255);
+            /* margin-top: 25px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            margin-left: 40px; */
+            /* margin: 25px 10px 15px 40px; */
+ 
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-left: 30px; */
+            /* border: 8px solid blue; */
+           /* border-style: groove;
+           border-width: 18px;
+           border-color: blue; */
+           margin: 25px 40px;
+           padding: 10px 20px 15px 30px;
+            width: 350px;
+            height: 100px;
+            font-size: 25px;
+            float: left;
+            text-align: center;
+           /* border-top: 8px solid blue;
+           border-right: 6px groove yellow;
+           border-bottom: 8px solid blue;
+           border-left: 6px groove yellow; */
+           border: 10px solid blue;
+           border-radius: 30px;
+           box-shadow: -10px 10px 20px 20px silver;
+           transition: background-color 2s,font-size 500ms;
+           transform-origin: bottom right;
+        }
+
+        .state:hover{
+            background-color: red;
+            font-size: 40px;
+            /* transform: rotate(10deg); */
+            animation: myanimation 10s;
+           
+        }
+        @keyframes myanimation {
+            0%{background-color: burlywood; transform: rotate(0deg) scale(1);}
+            25%{background-color: blueviolet; transform: rotate(-90deg) scale(1,5);}
+            50%{background-color: green; transform: rotate(90deg) scale(1,5);}
+            75%{background-color: yellow; transform: rotate(0deg) scale(2);}
+            100%{background-color: burlywood; transform: rotate(0deg) scale(1);}
+
+        }   
+        /* #alabama{
+            /outline: 6px dashed red;
+            outline-offset: 14px;
+            
+        } */
+    </style>
+
+</head>
+<body>
+    <h1>States of USA</h1>
+   <div class="state" id="alabama">Alabama</div> 
+   <div class="state">Alaska</div> 
+   <div class="state">Arizona</div> 
+   <div class="state">Arkansas</div> 
+   <div class="state">California</div> 
+   <div class="state">Colorado</div> 
+   <div class="state">Connecticut</div> 
+   <div class="state">Delaware</div> 
+   <div class="state">Florida</div> 
+   <div class="state">Georgia</div> 
+   <div class="state">Hawaii</div> 
+   <div class="state">Idaho</div> 
+   <div class="state">Illinois</div> 
+   <div class="state">Indiana</div> 
+   <div class="state">Iowa</div> 
+   <div class="state">Kansas</div> 
+   <div class="state">Kentucky</div> 
+   <div class="state">Louisiana</div> 
+   <div class="state">Maine</div> 
+   <div class="state">Maryland</div> 
+
+</body>
+</html>
