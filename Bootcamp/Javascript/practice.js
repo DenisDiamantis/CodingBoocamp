@@ -470,7 +470,6 @@
 // console.log(students.length);
 // for (let index = 0; index < prices.length; index++) {
 //     console.log(`Student Name: ${students[index].studentName}, age: ${students[index].age}`);
-
 // }
 
 //aarray-push/pop
@@ -478,22 +477,18 @@
 // prices.push(500);
 // for (let index = 0; index < prices.length; index++) {
 //     console.log(prices[index]);
-
 // }
 // console.log(prices.pop());
 // for (let index = 0; index < prices.length; index++) {
 //     console.log(prices[index]);
-
 // }
 // console.log();
-
 // let products=[
 //     {productName: "TV",price:5000},
 //     {productName: "Monitor",price:1200},
 //     {productName: "iPad",price:2000},
 //     {productName: "iPhone",price:1800}
 // ];
-
 // products.push({productName:"Keyboard",price:45});
 // console.log(products);
 
@@ -523,7 +518,6 @@
 
 // let iProducts = products.filter((p) => { return p.brand === "Apple" });
 // console.log(iProducts);
-
 // let update = products.map((p) => {
 //     p.price += 100;
 //     p.productName = p.productName.toUpperCase();
@@ -540,3 +534,27 @@
 
 // let a = new Date();
 // console.log(a);
+
+//Closure
+// function bankAcoountDeposit() {
+//     let currentBalance = 1000;
+//     let deposit = (depositAmount) => {
+//         currentBalance += depositAmount;
+//         return `Account balance: ${currentBalance}`;
+//     };
+//     return deposit;
+// };
+// let dp = bankAcoountDeposit();
+// console.log(dp(500));
+
+//JSON
+// console.log(
+//     JSON.stringify({
+//         firstName: "Adam",
+//         lastName: "Smith",
+//         age: 24
+//     })
+// );
+// console.log(JSON.parse(
+//     '{"firstName":"Adam","lastName":"Smith","age":24}')
+//     );
