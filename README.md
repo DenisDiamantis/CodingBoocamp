@@ -1,1 +1,1 @@
-PeopleCert Coding Bootcamp Become a Full-Stack Web Developer 
+PeopleCert Coding Bootcamp Full-Stack Web Developer Training
