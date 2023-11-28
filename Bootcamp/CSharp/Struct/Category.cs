@@ -2,7 +2,11 @@
 {
     private int _categoryID;
     private string _categoryName;
-
+    public Category(int categoryID, string categoryName)
+    {
+        _categoryID = categoryID;
+        _categoryName = categoryName;
+    }
     public int CategoryID { get { return _categoryID; } set { if (value > 1 && value <= 10) _categoryID = value; } }
 
     public string CategoryName
