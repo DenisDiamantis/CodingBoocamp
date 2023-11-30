@@ -27,6 +27,21 @@
                 new Employee {EmpId = 105,EmpName="Alexa",Job="Manager",City="New York",Salary=6232}
             };
 
+            double min = employees.Min(emp => emp.Salary);
+            Console.WriteLine("Minimun: " + min);
+
+            double max = employees.Max(emp => emp.Salary);
+            Console.WriteLine("Maximum: " + max);
+
+            double sum = employees.Sum(emp => emp.Salary);
+            Console.WriteLine("Sum: " + sum);
+
+            double avrg = employees.Average(emp => emp.Salary);
+            Console.WriteLine("Average: " + avrg);
+
+            double cnt = employees.Count();
+            Console.WriteLine("Count: " + cnt);
+
             //IEnumerable<Employee> result = employees.Where((emp) => emp.City == "Tokyo");
 
             //var sortedEmployees = employees.OrderByDescending(emp => emp.Job).ThenByDescending((emp) => emp.EmpName);
