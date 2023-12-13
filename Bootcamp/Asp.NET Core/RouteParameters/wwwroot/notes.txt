@@ -1,0 +1,3 @@
+﻿(function () {
+    'use strict';
+This a notes txt file.
