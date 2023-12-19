@@ -1,0 +1,87 @@
+﻿@using Fundamentals.Models
+@{
+	string appTitle = "Asp.Net Core Demo App";
+	// Person person = new Person()
+	// {
+	// 	Name = "John",
+	// 	DateOfBirth = null,
+	// 	PersonGender=Gender.Male
+	// };
+
+	 List<Person> people = new List<Person>()
+	{
+		new Person(){Name="John",DateOfBirth=DateTime.Parse("2000-05-06"),PersonGender=Gender.Male},
+		new Person(){Name="Linda",DateOfBirth=DateTime.Parse("2002-01-09"),PersonGender=Gender.Female},
+		new Person(){Name="Susan",DateOfBirth=DateTime.Parse("2004-07-12"),PersonGender=Gender.Other}
+	};
+}
+@{
+	double? GetAge(DateTime? dateOfBirth)
+	{
+		if (dateOfBirth is not null)
+		{
+			double age = Math.Round((DateTime.Now - dateOfBirth.Value).TotalDays / 365);
+			return age;
+		}
+		else
+		{
+			return null;
+		}
+	}
+
+	string alertMessage = $"<script>alert('{people.Count} people found')</script>";
+}
+
+
+<! DOCTYPE html>
+<html>
+	<head>
+		@* <title>Asp.Net Core App</title> *@
+		<title>@ViewData["appTitle"]</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		@Html.Raw(alertMessage)
+		<h1>Welcome</h1>
+	@foreach(var person in people)
+	{
+		@* @:Hello to *@
+		<div>
+			<span>Hello to </span>
+			@person.Name
+			<span>,</span>
+			<span>@person.PersonGender</span>
+			<span>@GetAge(person.DateOfBirth)</span>
+		</div>
+	}
+
+	@* 	<h2>Hello @person.Name</h2>
+	@if (person.DateOfBirth.HasValue)
+	{
+		double age = Math.Round((DateTime.Now - person.DateOfBirth).Value.TotalDays / 365);
+		<h3>You are @age years old </h3>
+	}
+
+	else
+	{
+		<h3>Date of Birth is unknown </h3>
+	}
+
+	@switch (person.PersonGender)
+	{
+		case Gender.Male:
+			<p>November 19 International Men's Day</p>
+			break;
+		case Gender.Female:
+			<p>March 8 International Women's Day</p>
+			break;
+		default:
+			<p>March 8 International Women's Day</p>
+			 break;
+	} *@
+	@* @{
+		double age = Math.Round((DateTime.Now - person.DateOfBirth).TotalDays / 365);
+		} 
+		<h3>You are @age years old </h3> *@
+	</body>
+</html>
